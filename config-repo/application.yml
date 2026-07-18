@@ -1,0 +1,8 @@
+eventhub:
+  environment: local
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

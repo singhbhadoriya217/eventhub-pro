@@ -1,8 +1,6 @@
 services:
 
-  # ==============================
   # MongoDB
-  # ==============================
   mongodb:
     image: mongo:8.0
     container_name: eventhub-mongodb
@@ -17,9 +15,7 @@ services:
     networks:
       - eventhub-network
 
-  # ==============================
   # Redis
-  # ==============================
   redis:
     image: redis:8-alpine
     container_name: eventhub-redis
@@ -32,9 +28,7 @@ services:
     networks:
       - eventhub-network
 
-  # ==============================
   # Kafka - KRaft Mode
-  # ==============================
   kafka:
     image: apache/kafka:4.0.0
     container_name: eventhub-kafka
@@ -70,9 +64,8 @@ services:
     networks:
       - eventhub-network
 
-  # ==============================
+
   # Kafka UI
-  # ==============================
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
     container_name: eventhub-kafka-ui
@@ -87,9 +80,7 @@ services:
     networks:
       - eventhub-network
 
-  # ==============================
   # Elasticsearch
-  # ==============================
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
     container_name: eventhub-elasticsearch
@@ -105,9 +96,8 @@ services:
     networks:
       - eventhub-network
 
-  # ==============================
+
   # Kibana
-  # ==============================
   kibana:
     image: docker.elastic.co/kibana/kibana:8.17.0
     container_name: eventhub-kibana
@@ -122,20 +112,14 @@ services:
       - eventhub-network
 
 
-# ==============================
 # Volumes
-# ==============================
-
 volumes:
   mongodb_data:
   redis_data:
   elasticsearch_data:
 
 
-# ==============================
 # Network
-# ==============================
-
 networks:
   eventhub-network:
     driver: bridge
