@@ -73,4 +73,8 @@
         </pluginManagement>
     </build>
 
+    <modules>
+        <module>infrastructure/discovery-server</module>
+    </modules>
+
 </project>
