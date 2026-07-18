@@ -74,6 +74,10 @@
     </build>
 
     <modules>
+        <module>common/common-core</module>
+        <module>common/common-exception</module>
+        <module>common/common-events</module>
+
         <module>infrastructure/discovery-server</module>
         <module>infrastructure/config-server</module>
         <module>infrastructure/api-gateway</module>

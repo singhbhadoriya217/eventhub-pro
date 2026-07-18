@@ -1,0 +1,4 @@
+com/eventhub/common/events/user/UserRegisteredEvent.class
+com/eventhub/common/events/payment/PaymentCompletedEvent.class
+com/eventhub/common/events/notification/NotificationEvent.class
+com/eventhub/common/events/booking/BookingCreatedEvent.class

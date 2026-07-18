@@ -9,6 +9,9 @@
         <module name="api-gateway" />
         <module name="config-server" />
         <module name="discovery-server" />
+        <module name="common-exception" />
+        <module name="common-events" />
+        <module name="common-core" />
       </profile>
     </annotationProcessing>
   </component>
